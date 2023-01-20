@@ -4,7 +4,7 @@ INSTALLATION
 
 -Download the zip project or clone repository
 
--Run the following commands on folder search_movie-main:
+-Run the following commands on folder search_movie:
 
       npm install
 
