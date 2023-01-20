@@ -2,13 +2,13 @@
   "expo": {
     "name": "5mins-test",
     "slug": "5mins-test",
-    "version": "1.0.0",
+    "version": "47.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -18,7 +18,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tonyrmz1.5minstest"
     },
     "android": {
       "adaptiveIcon": {
@@ -28,6 +29,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "69114ee0-2b5d-482d-8052-07af3deec566"
+      }
     }
   }
 }
