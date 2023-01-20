@@ -19,12 +19,6 @@ const InfoScreen = ({route}) => {
         uri: BASE_URI_POSTER+item.poster_path+API_KEY,
       }}>
     </Image>;
-
-  const posterViewNotAvailable = 
-    <Image
-      style={styles.movieImageLogo}
-      source={require('../assets/no-image-icon-15.png')}>
-    </Image>
   
   const backdropViewWithPosterBlured =  
     <ImageBackground
@@ -34,7 +28,7 @@ const InfoScreen = ({route}) => {
         uri: BASE_URI_BACK+item.backdrop_path+API_KEY,
       }}>
         <View style={styles.overlay}>
-          {item.poster_path!=null ? posterView : posterViewNotAvailable}
+          {posterView}
         </View>
     </ImageBackground>;
 
@@ -52,7 +46,7 @@ const InfoScreen = ({route}) => {
   return (
     <View style={styles.container}>
             
-      {(item.backdrop_path!=null) ? backdropViewWithPosterBlured : backdropNotAvailable}
+      {(item.backdrop_path!=null && item.poster_path!=null) ? backdropViewWithPosterBlured : backdropNotAvailable}
       
       
       <Text style={styles.title}>{item.title}</Text>
@@ -112,8 +106,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   scrollStyle:{
-    width: '100%',
-    paddingHorizontal: 5
+    width: '95%',
   },
   title:{
     marginTop: 10,

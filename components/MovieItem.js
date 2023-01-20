@@ -1,7 +1,6 @@
 import { Text, TouchableOpacity, StyleSheet, Image, View } from 'react-native';
 import React from 'react';
 import {COLORS, FONTS} from '../globals/GlobalStyles';
-import InfoSection from './InfoSection';
 
 
 
@@ -29,10 +28,11 @@ const MovieItem = (props) => {
             
             <View style={styles.infoContainer}>  
                 <Text style={styles.title}>{props.item.title}</Text>
-                <Text style={styles.infoText}>{'Lang: '+props.item.original_language.toUpperCase()}</Text>
-                <Text style={styles.infoText}>{'Rating: '+props.item.vote_average}</Text>
-
-                
+                <View style={styles.subInfoContainer}>
+                    <Text style={styles.infoText}>{'Lang: '+props.item.original_language.toUpperCase()}</Text>    
+                    <Text style={styles.infoText}>{'Rating: '+props.item.vote_average}</Text>
+                </View>
+                           
 
             </View>
         </TouchableOpacity>
@@ -69,6 +69,10 @@ const styles = StyleSheet.create({
     },
     infoContainer:{
         flex:1
+    },
+    subInfoContainer:{
+        marginTop: 15,
+        flexDirection: 'row'
     }
 
 })

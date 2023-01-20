@@ -11,5 +11,5 @@ export const FONTS = {
 }
 
 export const TEXTS = {
-    notAvailable: 'Section not available'
+    notAvailable: 'No information available'
 }

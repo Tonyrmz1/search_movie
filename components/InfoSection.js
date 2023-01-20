@@ -23,7 +23,8 @@ const styles = StyleSheet.create({
         color: COLORS.secondaryColor,
         fontSize: FONTS.medium,
         fontWeight: 'bold',
-        marginTop: 10
+        marginTop: 10,
+        paddingLeft: 5
       },
       sectionTextContent:{
         paddingLeft: 10,
