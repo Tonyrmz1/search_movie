@@ -1,10 +1,10 @@
-# SearchMovie App Test
+# Search a Movie App Test
 
 INSTALLATION
 
 -Download the zip project or clone repository
 
--Run the following commands on folder SearchMovie-main:
+-Run the following commands on folder search_movie-main:
 
       npm expo install
 
