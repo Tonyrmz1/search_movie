@@ -6,7 +6,7 @@ INSTALLATION
 
 -Run the following commands on folder search_movie-main:
 
-      npm expo install
+      npm install
 
       npx expo start
   
